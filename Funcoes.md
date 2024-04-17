@@ -75,3 +75,17 @@ resultado = calcularAreaEPerimetro(pi, 3);
 console.log(resultado);
 
 6. Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+
+   
+function tabuada (num) {
+    for (let i = 1; i <= 10; i++) { //este loop for itera de 1 a 10 para criar cada linha da tabuada.
+    let resultado = num * i; // multiplica o numero escolhido por i e armazena em resultado
+    console.log(`${num} x ${i} = ${resultado}`); //imprime no console
+
+    }
+}
+
+let num = 7; // defino o numero
+resultado = tabuada (num); // chama a função e armazena no resultado no escopo GLOBAL e nao LOCAL
+
+
