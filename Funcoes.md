@@ -50,3 +50,28 @@ console.log(`${valorEmDolar} DOLARES EM REAIS É IGUAL A: ${valorEmReais}`);
 
 
 4. Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+
+function calcularPerimetroEArea (b, h) {
+    let perimetro = (2 * b + 2 * h);
+    let area = (b * h);
+    return {perimetro, area};
+}
+
+resultado = calcularPerimetroEArea(7, 3);
+console.log(resultado);
+
+
+
+5. Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+
+   function calcularAreaEPerimetro (pi, r) {
+ 
+    let area = (pi * r**2);
+    let perimetro = (2 * pi * r);
+    return {area, perimetro};
+}
+pi = 3.14;
+resultado = calcularAreaEPerimetro(pi, 3);
+console.log(resultado);
+
+6. Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
