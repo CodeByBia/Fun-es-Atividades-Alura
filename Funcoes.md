@@ -2,7 +2,7 @@
 
    function calcularIMC(peso, altura) {
    let resultado = peso / (altura**2);
-   console.log(`Seu IMC é de ${resultado.toFixed(2)}`);
+   console.log(`Seu IMC é de ${resultado.toFixed(2)}`); // posso chamar no console dentro da função ou criar variável global armazenar e imprimir
 }
 
 calcularIMC(50, 1.50);
@@ -26,7 +26,7 @@ console.log(`O resultado do fatorial é: ${resultado}`);
 
 
 
-3. Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$ 4,80.
+3. Crie uma função que converte um valor em dólar, passado como parâmetro, e ret isso, considere orna o valor equivalente em reais. Paraa cotação do dólar igual a R$ 4,80.
 
 function converterDolar(valorEmDolar) { // funcao recebe valorEmDolar como parametro
     let cotacaoDolar = 4.80; // definimos a cotacao do dolar
@@ -39,11 +39,6 @@ console.log(`${valorEmDolar} DOLARES EM REAIS É IGUAL A: ${valorEmReais}`);
 
 //tambem pode 
 
-// function converterDolar(valorEmDolar) { // funcao recebe valorEmDolar como parametro
-//     let cotacaoDolar = 4.80; // definimos a cotacao do dolar
-//     return valorEmDolar *= cotacaoDolar; //retorna o  parametro valorEmDolar, que recebe ele mesmo multiplicado pela cotacaoDolar
-// }
-
 // console.log(converterDolar(100));
 
 
@@ -52,13 +47,13 @@ console.log(`${valorEmDolar} DOLARES EM REAIS É IGUAL A: ${valorEmReais}`);
 4. Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
 
 function calcularPerimetroEArea (b, h) {
-    let perimetro = (2 * b + 2 * h);
-    let area = (b * h);
+    perimetro = (2 * b + 2 * h);   //quando você declara uma variável sem usar a palavra-chave var, let ou const, ela se torna uma variável global
+    area = (b * h);
     return {perimetro, area};
 }
 
 resultado = calcularPerimetroEArea(7, 3);
-console.log(resultado);
+console.log(`Perímetro = ${perimetro} Área = ${area} `);
 
 
 
